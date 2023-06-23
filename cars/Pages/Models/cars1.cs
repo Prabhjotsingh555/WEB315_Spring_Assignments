@@ -27,26 +27,27 @@ namespace cars.Models
 
         [RegularExpression(@"^[a-zA-Z\s]*$", ErrorMessage = "Company must contain only letters and white spaces.")]
         [Required]
-        [StringLength(30)]
+        [StringLength(60, MinimumLength = 4)]
         public string Company { get; set; }
         
         [RegularExpression(@"^[a-zA-Z\s]*$", ErrorMessage = "Engine must contain only letters and white spaces.")]
         [Required]
-        [StringLength(30)]
+        [StringLength(60, MinimumLength = 4)]
         public string Engine { get; set; }
 
         [RegularExpression(@"^[a-zA-Z\s]*$", ErrorMessage = "Country must contain only letters and white spaces.")]
         [Required]
-        [StringLength(30)]
+        [StringLength(60, MinimumLength = 4)]
         public string Country { get; set; }
 
         [RegularExpression(@"^[a-zA-Z\s]*$", ErrorMessage = "Features must contain only letters and white spaces.")]
         [Required]
-        [StringLength(30)]
+        [StringLength(60, MinimumLength = 4)]
         public string Features { get; set; }   
 
         [RegularExpression(@"^[A-Z][a-zA-Z\s]*$", ErrorMessage = "Colour must start with an uppercase letter and contain only letters and white spaces.")]
         [Required]
+        [StringLength(60, MinimumLength = 4)]
         public string Colour { get; set; }
     }
 }
