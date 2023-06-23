@@ -28,7 +28,9 @@ namespace cars.Models
                         Engine = "V8 engine",
                         Country = "United States",
                         Features = "Iconic muscle car known for its powerful performance and sleek design.",
-                        Price = 20000.00M
+                        Price = 2000.00M,
+                        Rating = 10,
+                        Colour = "Black"
                     },
 
                     new cars1
@@ -39,7 +41,9 @@ namespace cars.Models
                         Engine = "V8 engine",
                         Country = "United States",
                         Features = "America's sports car, known for its speed, style, and performance.",
-                        Price = 10000.00M
+                        Price = 1000.00M,
+                        Rating = 9,
+                        Colour = "Red"
                     },
 
                     new cars1
@@ -50,7 +54,9 @@ namespace cars.Models
                         Engine = "Flat-four engine",
                         Country = "Germany",
                         Features = "Recognizable for its distinctive round shape, the Beetle became one of the most successful and iconic cars in automotive history.",
-                        Price = 5000.00M
+                        Price = 5000.00M,
+                        Rating = 8,
+                        Colour = "Gold"
                     },
 
                     new cars1
@@ -61,7 +67,9 @@ namespace cars.Models
                         Engine = "Inline-six engine",
                         Country = "United Kingdom",
                         Features = "Often referred to as one of the most beautiful cars ever made, the E-Type combines stunning design with impressive performance.",
-                        Price = 70000.00M
+                        Price = 7000.00M,
+                        Rating = 9,
+                        Colour = "Brown"
                     },
 
                     new cars1
@@ -72,7 +80,9 @@ namespace cars.Models
                         Engine = "Flat-six engine",
                         Country = "Germany",
                         Features = "Renowned for its timeless design and exceptional handling, the 911 has become an automotive icon.",
-                        Price = 50000.00M
+                        Price = 5000.00M,
+                        Rating = 7,
+                        Colour = "White"
                     },
 
                     new cars1
@@ -83,7 +93,9 @@ namespace cars.Models
                         Engine = "Inline-six engine",
                         Country = "United Kingdom",
                         Features = "Considered one of the most luxurious and prestigious cars of its time, the Silver Ghost set new standards for refinement and reliability.",
-                        Price = 1000000.00M
+                        Price = 1000.00M,
+                        Rating = 10,
+                        Colour = "Black"
                     }
                 );
 
