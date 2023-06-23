@@ -14,8 +14,7 @@ namespace cars.Models
         public string Company { get; set; }
         public string Engine { get; set; }
         public string Country { get; set; }
-        public string Features { get; set; }
-        
+        public string Features { get; set; }       
         public string Colour {get; set;}
     }
 }
