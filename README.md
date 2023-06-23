@@ -27,3 +27,5 @@ copy name write cd and paste name then run
 so now when i run dotnet run my project is building and it give me a local browser address
 when i click on it by pressing ctrl + click it take me at browser from visual
 now my webite is running
+
+----------------------Assignment 2------------
