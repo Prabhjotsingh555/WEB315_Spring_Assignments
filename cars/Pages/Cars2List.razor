@@ -1,6 +1,28 @@
 ﻿@page "/cars2"
-<h3>Cars2List</h3>
+
+<h3>CarsList</h3>
+
+<button @onclick="showcars">Show Cars</button>
+
+<ul>@foreach (var item in listCars)
+ {
+  <li>@item</li>    
+ }</ul>
 
 @code {
+    private string[] listCars = new string[0];
+
+    private void showcars()
+    {
+        listCars = new string[5] {
+        "Toyota Camry",
+        "Toyota Corolla",
+        "Toyota Prius",
+        "Toyota RAV4",
+        "Toyota Highlander"
+     
+        };
+    }
+
 
 }
