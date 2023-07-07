@@ -1,27 +1,48 @@
 ﻿@page "/cars2"
 
-<h3>CarsList</h3>
+<h3>@heading</h3>
 
-<button @onclick="showcars">Show Cars</button>
+@code{
+    private string heading = "CarsList";
 
-<ul>@foreach (var item in listCars)
+}
+
+<input id="i1" type="number" min = "0" max = "5" @bind-value = "displayCountValue" @oninput="(ChangeEventArgs e) => { 
+    if (int.TryParse(e.Value.ToString(), out int value) && value >= 0 && value <= 5)
+     { displayCountValue = value; StateHasChanged(); }}">
+</input>
+
+<button id="b1" @onclick="showcars">Show Cars</button>
+
+<ul>@foreach (var item in newlistCars.Take(displayCountValue))
+
  {
-  <li>@item</li>    
- }</ul>
+
+  <li>@item</li> 
+
+ }
+
+</ul>
 
 @code {
-    private string[] listCars = new string[0];
+    private string[] newlistCars = new string[0];
+    private int displayCountValue = 5;
 
     private void showcars()
     {
-        listCars = new string[5] {
+        newlistCars = new string[] {
+
         "Toyota Camry",
         "Toyota Corolla",
         "Toyota Prius",
         "Toyota RAV4",
         "Toyota Highlander"
-     
+        
+
         };
+
+        StateHasChanged();
+
     }
 
 
