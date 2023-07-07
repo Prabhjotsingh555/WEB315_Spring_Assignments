@@ -1,7 +1,15 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<h1>@themeName</h1>
 
-Welcome to your new app.
+<h4>@myname</h4>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<p>@DateTime.Now</p>
+
+
+@code{
+
+    private string myname = "Prabhjot Singh";
+    private string themeName = "Cars";
+    
+}
